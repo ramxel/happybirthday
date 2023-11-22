@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>HBD Novia</title>
+</head>
+<body class="bg-dark">
+
+    <audio id="backgroundMusic" src="semogaya.mp3" loop></audio>
+    <!-- Kartu Ucapan 1 -->
+    <div class="card-container">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Haloo Cantik</h1>
+            <p class="card-text text-black">ini kartu ucapan sederhana dari aku buat kamu</p>
+            <p class="card-text text-black">Atur Volume kamu untuk mendengarkan lagu! setelah "Next"</p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(2)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <!-- Kartu Ucapan 2 -->
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Siapasiii cantik ini namanya??</h1>
+            <input type="text" class="form-control rounded-pill text-black" placeholder="Nama kamu">
+            <button class="btn btn-dark rounded-pill" onclick="showCard(3)">Submit</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <!-- Kartu Ucapan 3 -->
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black" id="greetingTitle"></h1>
+            <p class="card-text text-black">di tanggal 24 November ini kamu naik level hihi</p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(4)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <!-- Kartu Ucapan 4 -->
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Hari ini hari spesial kamu</h1>
+            <p class="card-text text-black">Selamat ulang tahun ya cantikku,
+                Semoga Novi selalu dikasih kemudahan dan kekuatan dalam berbagai hal sama allah,
+                semoga sehat truss yaa cantik, semoga hal baik dateng terus buat Novi,
+                kalaupun ada yang ga baik, semoga itu tuh bikin Novi jadi lebih kuat dan bisa belajar dari pengalamannya,
+                Semoga apa yang Novi cita-citakan segera terwujud dnegan hasil dan proses yang baik yaaa
+            </p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(5)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <!-- Kartu Ucapan 5 -->
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Apresiasi untuk kamu</h1>
+            <p class="card-text text-black"> dihari kamu yang spesial ini, kamu wajib kasih Apresiasi
+                buat diri kamu sendiri, dimulai dari aku ya???
+            </p>
+            <p class="card-text text-black"> Makasih ya Novia Cantikkk, udah kuat sampe sekarang,
+                makasih bahkan sampai detik ini pun kamu udah berusaha buat lakuin yang terbaik versi diri kamu sendiri,
+                karna level novi udah naik nihh jadi kedepannya bakalan makin sulit dari sebelumnya,
+                jadi harus semakin tahan banting ya?? Novi harus inget kalo Novi tuh ngga sendirian, oke?
+                sekarang Novi juga wajibb bilang makasih buat diri sendirii!!!
+            </p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(6)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <!-- Kartu Ucapan 6 -->
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Aku bangga sama kamu</h1>
+            <p class="card-text text-black"> Aku aja bangga sama kamu, kamu gimana?? harus bangga dong sama diri kamu sendiri!
+            </p>
+            <p class="card-text text-black"> 
+                Novi cantik, Novi baik..., makasih yaa udah belajar banyak hal selama 20 tahun ini.
+                Novi harus tau, salah satu alesan aku bisa suka sama Novi tuh, karna Novi rajinn bgt, 
+                aku juga suka liat Novi serius di suatu hal, dulu sih aku liatnya Novi kaya fokus bgt di jarkom hahaha. 
+                Semoga kedepannya makin rajin yaa?? gabolee males maleesss... cape, jenuh, pusing, kesel, itu wajar ko 
+                wajar bgt malah, karna berarti kita berusaha buat mahamin hal itu...
+            </p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(7)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <!-- Kartu Ucapan 7 -->
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Semangat buat kamu</h1>
+            <p class="card-text text-black"> 
+                Jadi... kalo kamu ngerasa cape, jenuh, pusing, kesel, kamu harus istirahat dulu, 
+                stop semua yang lagi kamu kerjain, dengan begituu... kamu bakal ngerefresh otak kamu duluu biar jadi fresh lagi.
+                Novia cantik... apapun yang kamu hadepin nantinyaa, gaboleh gampang nyerah ya?? inget kan? Novi punya siapa???
+                yak btull, punya aku, kamu bisa tanya ke aku kalau emang kamu udah mentok bgt, oke??? pokonya gabole di bawa stress!!
+            </p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(8)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <!-- Kartu Ucapan 8 -->
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Happy Birthday</h1>
+            <p class="card-text text-black"> 
+                Sekali lagi, selamat ulang tahun ya cantik
+            </p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(9)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Surprisee</h1>
+            <p class="card-text text-black"> 
+                Perhatian! untuk melanjutkan yang selanjutnya, harap di baca bersamaan dengan membuka kadonya wkwkwk
+            </p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(10)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Gift-Password</h1>
+            <p class="card-text text-black"> 
+                Gift password bisa kamu dapatkan di papperbag hadiah kamu, tertempel di dinding paperbagnya!
+            </p>
+            <input type="password" id="passwordInput" class="form-control rounded-pill text-black" placeholder="Masukkan password">
+            <button class="btn btn-dark rounded-pill" onclick="checkPassword()">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Gift 1</h1>
+            <p class="card-text text-black"> 
+                hehe aku gatau kenapa aku kadoin tas ini, tapi ini ada pin lotsonya di dalem, 
+                ohiyaa ada pin beruang juga sih, kapelan sama aku. . . semoga suka ya, semoga kepake
+            </p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(12)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Gift 2</h1>
+            <p class="card-text text-black"> 
+                ini baju tidur, maaf yaa kalo semisal ga sesuai expetasi kamu barangnya.
+                semoga bisa kepake aja deh
+            </p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(13)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Gift 3</h1>
+            <p class="card-text text-black"> 
+                ini boneka beruang... tapi lotso.. tapi beruang... tapi lotso...
+                btw itu hodie beruangnya bisa di lepas taukk wkwk
+            </p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(14)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Gift 4</h1>
+            <p class="card-text text-black"> 
+                yg ini selimutt lotsoo, semoga suka aja deh, aku blm tahu barangnya gimana hehe...
+                cuma pgn nyenengin Novi aja
+            </p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(15)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Gift 5</h1>
+            <p class="card-text text-black"> 
+                oyaa.. ini ada parfum... Novi waktu itu pgn parfum ini juga kann... 
+                iniii akuu kadoinn hehe... semoga bisa bikin inget sama aku terusssss
+            </p>
+            <button class="btn btn-dark rounded-pill" onclick="showCard(16)">Next</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <div class="card-container" style="display: none;">
+        <div class="card bg-info text-center">
+            <h1 class="card-title text-black">Selesai</h1>
+            <p class="card-text text-black"> 
+                Ayyy... minta maaff yaa kalo ga sesuai ekspetasi... 
+                semoga seneng aja deh ya...
+            </p>
+            <h1 class="card-title text-black">Dadahh ayy</h1>
+            <button class="btn btn-dark rounded-pill" onclick="closeWebsite()">Bye bye</button>
+            <p class="card-text text-black">Credit : melcuriuss</p>
+        </div>
+    </div>
+
+    <script>
+        function showCard(cardNumber) {
+
+            // Memulai atau menghentikan pemutaran musik
+            if (cardNumber >= 1 && cardNumber <= 17) {
+                playBackgroundMusic();
+            } else {
+                stopBackgroundMusic();
+            }
+
+            // Menampilkan kartu sesuai nomor yang diinginkan
+            const cardContainers = document.querySelectorAll('.card-container');
+            cardContainers[cardNumber - 1].style.display = 'flex';
+
+            // Menyembunyikan kartu sebelumnya
+            if (cardNumber > 1) {
+                cardContainers[cardNumber - 2].style.display = 'none';
+            }
+
+            // Menyambut dengan nama pengguna pada Kartu Ucapan 3
+            if (cardNumber === 3) {
+                const userName = document.querySelector('input').value;
+                document.getElementById('greetingTitle').innerText = `Selamat Ulang tahun ${userName} `;
+            }
+        }
+
+        function playBackgroundMusic() {
+            var audio = document.getElementById('backgroundMusic');
+            audio.play();
+        }
+
+        function stopBackgroundMusic() {
+            var audio = document.getElementById('backgroundMusic');
+            audio.pause();
+        }
+
+
+        const correctPassword = "totallyhappy";
+
+        function checkPassword() {
+            // Mengambil nilai dari input password
+            const enteredPassword = document.getElementById('passwordInput').value;
+
+            // Memeriksa apakah password benar
+            if (enteredPassword === correctPassword) {
+                // Jika benar, lanjutkan ke kartu selanjutnya
+                showCard(11); // Ganti dengan nomor kartu selanjutnya
+            } else {
+                // Jika salah, tampilkan alert
+                alert("Password salah, isi ulang!");
+            }
+        }
+
+        function closeWebsite() {
+        // Menutup tab atau jendela saat ini
+        window.close();
+        }
+
+
+    </script>
+
+</body>
+</html>

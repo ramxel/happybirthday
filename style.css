@@ -1,0 +1,35 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.card {
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.bg-info {
+    background-color: #add8e6; /* Warna biru pastel */
+    border-radius: 15px;
+}
+
+.text-black {
+    color: #000; /* Warna teks hitam */
+    max-width: 400px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+form-control {
+    margin-bottom: 10px;
+}
